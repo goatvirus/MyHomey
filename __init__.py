@@ -11,7 +11,7 @@ class MyHomey(MycroftSkill):
     def handle_device_on(self, message):
         action = message.data.get("action")
         device = message.data.get("device")
-        secondary = message.data.get("secondary")
+        secondary = message.data.get("action_secondary")
         self.log.info(F"Action = {action} , Secondary = {secondary} , Device = {device}")
 
 def create_skill():
