@@ -1,0 +1,10 @@
+settings.json
+
+# python compiled files
+*.pyc
+__pycache__/
+
+# Vim temp files
+.*.sw?
+
+updateskill.sh
