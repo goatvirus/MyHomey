@@ -12,7 +12,7 @@ class MyHomey(MycroftSkill):
         action = message.data.get("action")
         device = message.data.get("device")
         for cnt in range(len(action)):
-            self.log.info(F"Action #{cnt+1} = {action[cnt]}")
+            self.log.info(F"Action #{cnt} = {action[cnt]}")
 
 def create_skill():
     return MyHomey()
