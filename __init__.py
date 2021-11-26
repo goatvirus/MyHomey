@@ -20,7 +20,7 @@ class MyHomey(MycroftSkill):
         device = message.data.get("device_tv")
         action = message.data.get("device_action")
         channel = message.data.get("tv_channel")
-        if device == "None":
+        if device is None:
             device = "tv"
         self.log.info(F"Device = {device} , Action = {action} , Channel = {channel}")
 
