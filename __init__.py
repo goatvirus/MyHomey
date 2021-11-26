@@ -7,12 +7,11 @@ class MyHomey(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
 
-    @intent_handler(IntentBuilder('').require('action_on').require('device').optionally('action_secondary'))
+    @intent_handler(IntentBuilder('').require('action_on').require('device'))
     def handle_device_on(self, message):
         action = message.data.get("action")
         device = message.data.get("device")
-        secondary = message.data.get("action_secondary")
-        self.log.info(F"Action = {action} , Secondary = {secondary} , Device = {device}")
+        self.log.info(F"Action = {action} , Device = {device}")
 
 def create_skill():
     return MyHomey()
