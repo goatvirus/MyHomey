@@ -10,19 +10,19 @@ class MyHomey(MycroftSkill):
     # TV Action
     @intent_handler(IntentBuilder('').require('device_action').require('device_tv'))
     def handle_device_on(self, message):
-        action = message.data.get("device_action")
         device = message.data.get("device_tv")
-        self.log.info(F"Action = {action} , Device = {device}")
+        action = message.data.get("device_action")
+        self.log.info(F"Device = {device} , Action = {action}")
 
     # TV Action with Channel
     @intent_handler(IntentBuilder('').require('device_action').require('tv_channel').optionally('device_tv'))
     def handle_device_on(self, message):
+        device = message.data.get("device_tv")
         action = message.data.get("device_action")
         channel = message.data.get("tv_channel")
-        device = message.data.get("device_tv")
-        if device == "None"
+        if device == "None":
             device = "tv"
         self.log.info(F"Device = {device} , Action = {action} , Channel = {channel}")
-
+a
 def create_skill():
     return MyHomey()
