@@ -1,0 +1,7 @@
+watch (the|) {device}
+turn on (the|) {device} (power|)
+turn (the|) {device} (power|) on
+turn (the|) power on (the|) {device}
+power on (the|) {device}
+power (the|) {device} on
+watch (the|) {device}
