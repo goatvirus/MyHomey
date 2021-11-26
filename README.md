@@ -1,8 +1,8 @@
-# <img src="https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/tv.svg" card_color="#22A7F0" width="50" height="50" style="vertical-align:bottom"/> Mqqt Remote
-Mqtt remote
+# <img src="https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/tv.svg" card_color="#22A7F0" width="50" height="50" style="vertical-align:bottom"/> MyHomey Assistant
+MyHomey Assistant
 
 ## About
-Mqtt remote
+MyHomey Assistant
 
 ## Examples
 * "Watch {phrase}"
@@ -15,6 +15,9 @@ Jared Lucey
 Entertainment
 
 ## Tags
-#Mqtt
-#Remote
+#MyHomey
+#Home
+#Control
+#Automation
+#Smart
 
