@@ -10,8 +10,8 @@ class MyHomey(MycroftSkill):
     # Turn tv on
     @intent_handler(IntentBuilder('').require('tv_action_on').require('tv_device').optionally('tv_filler'))
     def handle_device_on(self, message):
-        action = message.data.get("action_on")
-        device = message.data.get("device")
+        action = message.data.get("tv_action_on")
+        device = message.data.get("tv_device")
         self.log.info(F"Action = {action} , Device = {device}")
 
     # Turn tv on channel
