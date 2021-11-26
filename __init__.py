@@ -8,7 +8,7 @@ class MyHomey(MycroftSkill):
         MycroftSkill.__init__(self)
 
     # TV Action
-    @intent_handler(IntentBuilder('').require('actions').optionally('devices'))
+    @intent_handler(IntentBuilder('').require('actions').optionally('devices').optionally('functions'))
     def handle_device_on(self, message):
         device = message.data.get("devices")
         action = message.data.get("actions")
