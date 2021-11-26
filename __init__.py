@@ -14,7 +14,7 @@ class MyHomey(MycroftSkill):
         action = message.data.get("device_action")
         self.log.info(F"Device = {device} , Action = {action}")
 
-    # TV Action with Channel
+    # TV Action Channel
     @intent_handler(IntentBuilder('').require('device_action').require('tv_channel'))
     def handle_device_on(self, message):
         device = message.data.get("device_tv")
