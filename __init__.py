@@ -11,8 +11,9 @@ class MyHomey(MycroftSkill):
     @intent_handler(IntentBuilder('').require('actions').optionally('devices').optionally('functions'))
     def handle_device_on(self, message):
         device = message.data.get("devices")
+        function = message.data.get("functions")
         action = message.data.get("actions")
-        self.log.info(F"Device = {device} , Action = {action}")
+        self.log.info(F"Device = {device} , Function = {function} , Action = {action}")
 
 def create_skill():
     return MyHomey()
